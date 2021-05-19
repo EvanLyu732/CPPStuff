@@ -1,2 +1,1 @@
-# RandomCPPStuff
 Random CPP Stuff

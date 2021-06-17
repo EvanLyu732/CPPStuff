@@ -5,24 +5,12 @@ using namespace std;
 
 double* pd = nullptr;
 
-//define a class
-class Vector2{
-public:
-  Vector2(int s) :elem{new double[s]}, sz{s} {} //construct a Vector
-  double& operator[](int i) {return elem[i];} 
-  int size() {return sz;}
-private:
-  double* elem; //pointer to elements
-  int sz; // the number of elements
-};
-
-Vector2 v(6); // a vector with 6 elements
-
-//define a struct
 struct Vector{
   int sz; //number of elements
   double* elem; //pointer to elements
 };
+
+Vector v;
 
 void vector_init(Vector& v,int s)
 {
